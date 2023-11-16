@@ -1,0 +1,73 @@
+<?php
+class Personal {
+    private $Id; ///prioridades
+    private $apellido;
+    private $nombre;
+    private $cargo_id;
+    private $fecha_inicio;
+    private $fecha_fin;
+    
+
+    public function __construct(){
+        $this->setId("0");  ///CONSTRUCTOR
+        $this->setApellido("");
+        $this->setNombre("");
+        $this->setCargo_id(0);
+        $this->setFecha_inicio("");
+        $this->setFecha_fin("");
+
+    }    
+
+}
+
+function setId($id){
+    return $this->id=$id;
+}
+
+function getId() {
+    return $this->id;
+
+}
+
+function setApellido($ape){
+    return $this->apellido=$ape;
+}
+
+function getApellido() {
+    return $this->ape;
+
+}
+
+function setNombre($nom){
+    return $this->nombre=$nom;
+}
+
+function getNombre() {
+    return $this->nom;
+
+}
+function setCargo_id($cargo_id){
+    return $this->cargo_id=$cargo_id;
+}
+
+function getCargo_id() {
+    return $this->cargo_id;
+
+}
+function setFecha_inicio($fcha_inicio){
+    return $this->fecha_inicio=$fcha_inicio;
+}
+
+function getFecha_inicio() {
+    return $this->fcha_inicio;
+
+}
+function setFecha_fin($fcha_fin){
+    return $this->fecha_fin=$fcha_fin;
+}
+
+function getFecha_fin() {
+    return $this->fcha_fin;
+
+}
+?> 
